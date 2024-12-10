@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: rgb(255,121,0);
+  background: linear-gradient(90deg, rgba(255,121,0,1) 18%, rgba(0,0,0,1) 100%);
+  color: white;
+}
+header {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 18%, rgba(255,121,0,1) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  header .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header .nav-links li {
+    margin: 0 15px;
+  }
+  
+  header .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    min-width: 150px;
+  }
+  
+  .dropdown-menu li {
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #f8d210;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.chapters ul {
+  list-style-type: none;
+}
+
+.chapters ul li {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.reviews {
+  background-color: black;
+  color: white;
+}
+
+.reviews .review {
+  margin-bottom: 20px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.manga-info-container {
+  display: flex;
+  gap: 20px;
+}
+
+.manga-image {
+  position: relative;
+  background: black;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.manga-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.manga-image img {
+  display: block;
+  width: 375px;
+  height: 500px;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.manga-details {
+  flex: 1;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.manga-details:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.manga-details p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: white;
+}
+
+p strong {
+  color: #f8d210;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.manga-details small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+.manga-details .buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.manga-details .buttons a {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.manga-details .buttons a:hover {
+  background-color: white;
+  color: black;
+}
+
+.manga-details .icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.manga-details .icons i {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.manga-details .icons span {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.manga-details .icons i:hover {
+  color: #f8d210; 
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    background: rgb(255, 121, 0);
+    background: linear-gradient(90deg, rgba(255, 121, 0, 1) 18%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  header .nav-links {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header .nav-links li {
+    margin: 0;
+  }
+
+  section {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  .chapters ul li {
+    font-size: 0.85rem;
+  }
+
+  .reviews .review {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .manga-info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .manga-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .manga-details {
+    width: 100%;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .manga-details p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .manga-details .buttons a {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .manga-details .icons {
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+
